@@ -1,0 +1,275 @@
+*{
+    margin: 1px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    
+    
+}
+
+
+.navbar{
+
+    display: flex; /* to place in one line */
+    justify-content: space-between;
+    margin-left: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+.logo{
+
+    width: 120px;
+}
+
+.link1{
+
+    display: inline-block;  /* to dispaly the contents in one line */
+}
+
+.item{
+
+    text-decoration: none; /* to remove underline */
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+
+/* color change during hovering
+ 
+   syntax
+selector:pseudo-class {property: value;
+}
+*/
+
+.item:hover{
+    color: red;
+}
+
+.title{
+    margin-top: 11px;
+    margin-left: 8px;
+}
+
+.titleh1{
+
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+
+    color: brown; /* span */
+}
+
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+
+.images{
+
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+
+.images img{
+    position: absolute; /* to place on over another */
+    height: 100%;
+    left: 50%; /* this will create a slidebar to move left */
+    bottom: 0px;
+    transform: translateX(-50%); /* this will nullify the left value */
+    transition: bottom 1s, 2s;
+}
+
+.images:hover #shape{
+    bottom: 70px;
+}
+
+
+
+.images:hover #girl{
+    left: 40%;
+
+
+}
+#about{
+    margin: 16% 8% 0px 8%;
+
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.heading{
+text-align: center;
+
+}
+.heading h2{
+
+    font-size: 40px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about_details{
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.information{
+    margin-top:  2rem;
+
+}
+
+.infobox{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.infobox span{
+    margin-left: 1rem;
+    
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;/* to move the image to right side */
+    top: 2rem;
+}
+html{
+    scroll-behavior: smooth;/* to give a smooth transion when we click anything on navbar */
+}
+
+.skill-image img{
+    width: 80%;
+    padding-left: 4rem;
+}
+
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar{
+    width: 100%; /* same width as the parent base container width */
+    height: 0, 5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.html-bar{
+  width: 90%;
+  background-color: orange;
+}
+
+.css-bar{
+    width: 90%;
+    background-color: orange;
+}
+
+.js-bar{
+    width: 85%;
+    background-color: orange;
+}
+
+.react-bar{
+    width: 85%;
+    background-color: orange;
+}
+
+
+.icon-set{
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;     /* vertically center */
+    margin-top: 3%;          
+}
+.icon, .up-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center; /* horizontally center  of the div*/
+    align-items: center;     /* vertically center of the the div*/
+    margin: 0px 10px;
+}
+
+.icon i{
+    font-size: 40px; /* change fontsize of the icon */
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow, red);/* to give dual colouring */
+}
+
+.icon:hover i{       /* during hovering change the colour to white */
+    color: white;
+    animation: shake 0.75s; /* to give animation */
+}
+
+@keyframes shake{
+    10%{ transform: rotate(15deg);}/*at 10% time rotate 15deg  */
+    50%{ transform: rotate(-15deg);}
+    75%{ transform: rotate(15deg);}
+    100%{ transform: rotate(-15deg);}
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow
+{
+
+    float: right;
+    background-image: linear-gradient(to bottom right, yellow, red);/* to give dual colouring */
+    margin: 0px 10px 50px 8px;
+}
+
+.up-arrow:hover i{
+    color: white;
+
+}
+
+/*h1{
+    font-family: 'Lumanosimo', cursive;
+}*/
